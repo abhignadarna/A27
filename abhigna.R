@@ -80,7 +80,6 @@ ggplot(abhigna, aes(x = SpendingScore)) +
 
 
 
-# Load required library
 library(ggplot2)
 library(dplyr)
 
@@ -90,7 +89,6 @@ abhigna$SpendingScoreCategory <- cut(abhigna$SpendingScore,
                                      labels = c("Low", "Medium", "High"),
                                      right = FALSE)
 
-# Normalize data for a fair comparison (convert to percentage)
 normalized_data <- abhigna %>%
   group_by(AnnualIncome, SpendingScoreCategory) %>%
   summarise(count = n()) %>%
