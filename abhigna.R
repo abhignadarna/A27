@@ -14,7 +14,6 @@ install.packages("ggplot2")
 install.packages("dplyr")
 
 
-# Load required libraries
 library(ggplot2)
 library(MASS) 
 
@@ -45,7 +44,6 @@ ggplot(abhigna, aes(x = SpendingScore)) +
 
 
 
-# Load required library
 library(ggplot2)
 
 # Boxplot of Spending Score by Annual Income categories
